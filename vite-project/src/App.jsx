@@ -1,16 +1,24 @@
-import { useState } from 'react'
-import './App.css'
-import { Button } from "../src/components/ui/button"
+
+import Homepage from './components/Homepage'
+import Register from './components/Auth/Register'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 function App() {
-  const [count, setCount] = useState(0)
 
+const router = createBrowserRouter([
+
+    {
+      path: '/',
+      element: <Homepage />
+    },
+    {
+      path: '/homepage/register',
+      element: <Register/>
+    }
+
+
+  ])
   return (
-    <>
-    <Button variant={"link"}>O yeah
-
-    </Button>
-      <div className='bg-amber-200 h-screen w-full'>hello</div>
-    </>
+     <RouterProvider router={router} />
   )
 }
 
