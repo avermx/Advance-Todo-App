@@ -11,10 +11,9 @@ const SignUpDes = () => {
 
     return (
         <div className="dark bg-black h-[100vh] flex justify-center items-center  ">
-        <Card className="h-[80%]">
+        <Card className="h-[50%] w-[30%] flex justify-center items-center">
             <CardHeader>
-                <CardTitle>Card Title</CardTitle>
-                <CardDescription>Card Description</CardDescription>
+                <CardTitle>Check your email</CardTitle>
             </CardHeader>
             <CardContent>
                 <p>Card Content</p>
