@@ -2,6 +2,7 @@
 import Homepage from './components/Homepage'
 import Register from './components/Auth/Register'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import SignUpDes from './components/Auth/SignUpDes'
 function App() {
 
 const router = createBrowserRouter([
@@ -13,8 +14,12 @@ const router = createBrowserRouter([
     {
       path: '/homepage/register',
       element: <Register/>
+    },
+    {
+      path: '/signUpdescription',
+      element: <SignUpDes/>
     }
-
+    
 
   ])
   return (
